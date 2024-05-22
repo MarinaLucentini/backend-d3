@@ -31,15 +31,9 @@ public class Rettangolo {
         return larghezza;
     }
 
-    public void setLarghezza(int larghezza) {
-        this.larghezza = larghezza;
-    }
-
     public int getAltezza() {
         return altezza;
     }
 
-    public void setAltezza(int altezza) {
-        this.altezza = altezza;
-    }
+
 }

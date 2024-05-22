@@ -9,13 +9,6 @@ public class Carrello {
     private int totale;
 
 
-    /*public static int totaleArticoli (Articolo[] articoli){
-
-        for (int i = 0; i<articoli.length; i++){
-
-        }
-        return somma;
-    };*/
     public Carrello(Cliente user) {
 
         this.cliente = user;
@@ -23,11 +16,21 @@ public class Carrello {
 
     }
 
+    ;
+
+    public static int totaleArticoli(int[] prezzi) {
+        int somma = 0;
+        for (int i = 0; i < prezzi.length; i++) {
+            somma += prezzi[i];
+        }
+        return somma;
+    }
+
     public void setArticoli(Articolo[] articoli) {
         this.articoli = articoli;
     }
 
-   
+
     @Override
     public String toString() {
         return "Carrello{" +

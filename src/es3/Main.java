@@ -10,6 +10,13 @@ public class Main {
         Articolo art4 = new Articolo("tv", 500, 2);
         Articolo art5 = new Articolo("mouse", 250, 2);
         Articolo[] arrayarticoli = {art1, art2, art3, art4, art5};
+        int prezzoart1 = art1.getPrezzo();
+        int prezzoart2 = art2.getPrezzo();
+        int prezzoart3 = art3.getPrezzo();
+        int prezzoart4 = art4.getPrezzo();
+        int prezzoart5 = art5.getPrezzo();
+        int[] arrayprezzi = {prezzoart1, prezzoart2, prezzoart3, prezzoart4, prezzoart5};
+        System.out.println("Il totale è:" + Carrello.totaleArticoli(arrayprezzi));
 
 
         Carrello carrello = new Carrello(client1);
